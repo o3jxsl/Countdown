@@ -15,7 +15,7 @@ Test for boss countdown
 	function getTotalPV()
 	{
 		$.ajax({
-			url:"http://cloud.bmob.cn/0cabcec239a03e45/getTotalPV",
+			url:"https://cloud.bmob.cn/0cabcec239a03e45/getTotalPV",
 			dataType:'jsonp',
 			data:'',
 			jsonp:'callback',
@@ -30,7 +30,7 @@ Test for boss countdown
 	function setTotalPV()
 	{
 	  $.ajax({
-			url:"http://cloud.bmob.cn/0cabcec239a03e45/setTotalPV",
+			url:"https://cloud.bmob.cn/0cabcec239a03e45/setTotalPV",
 			dataType:'jsonp',
 			data:'',
 			jsonp:'callback',
