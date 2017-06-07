@@ -7,7 +7,7 @@ Test for boss countdown
 </aside>
 
 <!--<script src="jquery.js" type="text/javascript"></script>-->
-<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
       $(function(){
 	   getTotalPV();
