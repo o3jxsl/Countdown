@@ -6,7 +6,6 @@ Test for boss countdown
 <p style="font-size:16px;font-weight:bold;color:#FF7256;">网站访问次数：<label id="lb_count">0</label></p>
 </aside>
 
-<!--<script src="jquery.js" type="text/javascript"></script>-->
 <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
       $(function(){
@@ -14,7 +13,7 @@ Test for boss countdown
 	});
 	function getTotalPV()
 	{
-		$.ajax({
+	$.ajax({
 			url:"https://cloud.bmob.cn/0cabcec239a03e45/getTotalPV",
 			dataType:'jsonp',
 			data:'',
@@ -29,7 +28,7 @@ Test for boss countdown
 	}
 	function setTotalPV()
 	{
-	  $.ajax({
+	$.ajax({
 			url:"https://cloud.bmob.cn/0cabcec239a03e45/setTotalPV",
 			dataType:'jsonp',
 			data:'',
