@@ -11,7 +11,7 @@ Test for boss countdown
 <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
-	getTotalPV();
+//	getTotalPV();
 	$("#setOT").click(function(){
 			getOriginalTime();
 		});
@@ -25,9 +25,8 @@ $(function(){
 			data:'',
 			jsonp:'callback',
 			success:function(result) {
-		           //result.results[0].totalPV
-			    $('#OT').html(result.results[0].updatedAt);
-					$('#OT_freshTime').html(result.results[0].totalPV);
+				$('#OT').html(result.results[0].updatedAt);
+				$('#OT_freshTime').html(result.results[0].totalPV);
 			}
 		});
 	}
