@@ -21,7 +21,7 @@ Test for boss countdown
 			jsonp:'callback',
 			success:function(result) {
 		           //result.results[0].totalPV
-			   $('#lb_count').html(result.totalPV);
+			   $('#lb_count').html(result.results[0].totalPV);
 			   //更新次数
 			   setTotalPV();
 			}
