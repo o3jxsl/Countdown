@@ -17,7 +17,7 @@ $(function(){
 		});
 	});
 	
-//	function getOriginalTime()
+	function getOriginalTime()
 	{
 	$.ajax({
 			url:"https://cloud.bmob.cn/0cabcec239a03e45/getOriginalTime",
@@ -25,8 +25,8 @@ $(function(){
 			data:'',
 			jsonp:'callback',
 			success:function(result) {
-				$('#OT').html(result.results[1].updatedAt);
-				$('#OT_freshTime').html(result.results[1].totalPV);
+				$('#OT').html(result.updatedAt);
+				$('#OT_freshTime').html(result.totalPV);
 			}
 		});
 	}
@@ -39,9 +39,7 @@ $(function(){
 			data:'',
 			jsonp:'callback',
 			success:function(result) {
-		           //result.results[0].totalPV
-			   $('#lb_count').html(result.results[0].totalPV);
-			   //更新次数
+			   $('#lb_count').html(result.totalPV);
 			   setTotalPV();
 			}
 		});
@@ -55,6 +53,7 @@ $(function(){
 			data:'',
 			jsonp:'callback',
 			success:function(result) {
+			
 			}
 		});
 	}
