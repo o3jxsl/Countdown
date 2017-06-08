@@ -17,9 +17,15 @@ $(function(){
 			getOriginalTime();
 		});
 	$("#setOT").click(function(){
-			setOriginalTime();
+			//setOriginalTime();
+			getTest();
 		});
 	});
+	
+	function getTest()
+	{
+		curl -X GET https://cloud.bmob.cn/0cabcec239a03e45/getTest?time=1444;
+	}
 	
 	function getOriginalTime()
 	{
@@ -40,7 +46,6 @@ $(function(){
 	$.ajax({
 			url:"https://cloud.bmob.cn/0cabcec239a03e45/setOriginalTime",
 			dataType:'jsonp',
-			data:'time=140090231',
 			jsonp:'callback',
 			success:function(result) {
 			
