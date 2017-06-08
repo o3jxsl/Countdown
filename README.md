@@ -25,8 +25,8 @@ $(function(){
 			data:'',
 			jsonp:'callback',
 			success:function(result) {
-				$('#OT').html(result.results[0].updatedAt);
-				$('#OT_freshTime').html(result.results[0].totalPV);
+				$('#OT').html(result.results[1].updatedAt);
+				$('#OT_freshTime').html(result.results[1].totalPV);
 			}
 		});
 	}
