@@ -39,10 +39,8 @@ $(function(){
 	{
 	$.ajax({
 			url:"https://cloud.bmob.cn/0cabcec239a03e45/setOriginalTime",
-			type:'post',
 			dataType:'jsonp',
-			data:'',
-			time:'140090231',
+			data:'time=140090231',
 			jsonp:'callback',
 			success:function(result) {
 			
