@@ -10,6 +10,7 @@ Test for boss countdown
 <script type="text/javascript">
       $(function(){
 	   getTotalPV();
+//	   getOriginalTime();
 	});
 	function getTotalPV()
 	{
