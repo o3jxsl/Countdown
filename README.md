@@ -4,7 +4,8 @@ Test for boss countdown
 
 <aside id="sidebar">
 <p style="font-size:16px;font-weight:bold;color:#FF7256;">网站访问次数：<label id="lb_count">0</label></p>
-<button type="button" id="setOT">getOriginalTime</button>
+<button type="button" id="getOT">getOriginalTime</button>
+<button type="button" id="setOT">setOriginalTime</button>
 <p style="font-size:16px;font-weight:bold;color:#FF7256;">原始时间：<label id="OT">0</label> 更新：<label id="OT_freshTime">0</label>次</p>
 </aside>
 
@@ -12,8 +13,11 @@ Test for boss countdown
 <script type="text/javascript">
 $(function(){
 	getTotalPV();
-	$("#setOT").click(function(){
+	$("#getOT").click(function(){
 			getOriginalTime();
+		});
+	$("#setOT").click(function(){
+			setOriginalTime();
 		});
 	});
 	
@@ -31,6 +35,19 @@ $(function(){
 		});
 	}
 	
+	function setOriginalTime()
+	{
+	$.ajax({
+			url:"https://cloud.bmob.cn/0cabcec239a03e45/setOriginalTime",
+			dataType:'jsonp',
+			data:'',
+			jsonp:'callback',
+			success:function(result) {
+			
+			}
+		});
+	}
+
 	function getTotalPV()
 	{
 	$.ajax({
