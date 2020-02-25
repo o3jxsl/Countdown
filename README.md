@@ -9,7 +9,7 @@ Test for Boss Countdown
 <p style="font-size:16px;font-weight:bold;color:#FF7256;">原始时间：<label id="OT">0</label> 更新：<label id="OT_freshTime">0</label>次</p>
 </aside>
 
-<script src="https://http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
 	getTotalPV();
